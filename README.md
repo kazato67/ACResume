@@ -1,6 +1,6 @@
 # Resume Hosting Guide
 ---
-### Table of Contents
+## Table of Contents
 1. [Purpose](#purpose)
 2. [Prerequisites](#prerequisites)
 3. [How to Set Up and Deploy](#how-to-set-up-and-deploy)
@@ -11,11 +11,11 @@
 5. [FAQ](#faq)
 6. [Credits](#credits)
 ---
-### Purpose
+## Purpose
 This README provides a step-by-step guide on how to format, version control, and host a resume on a forge that supports static web hosting. It is designed for individuals who want to showcase their resume in an accessible and professional manner while following modern technical documentation best practices. By following this guide, users will learn how to use Markdown, Git, and a static site generator to create and maintain an online resume efficiently.
 
 ---
-## Prerequisites
+# Prerequisites
 Before proceeding, ensure you have the following:
 - **A computer with internet access**
 - **A text editor** (such as Notepad, VS Code, or any Markdown-supported editor)
@@ -24,9 +24,9 @@ Before proceeding, ensure you have the following:
 - **Basic knowledge of Markdown** (for formatting your resume) – *a brief introduction will be provided*
 - **No prior experience with Git or static site generators is required** – *these will be explained in the setup section*
 ---
-### How to Set Up and Deploy
+## How to Set Up and Deploy
 
-#### Understanding Markdown
+### Understanding Markdown
 Your resume is formatted using **Markdown**, a lightweight markup language used to structure and format text. Unlike programming languages that are used to write code, markup languages like Markdown define the structure of documents. Markdown allows you to format text using simple symbols (e.g., `**bold**`, `# Heading`, `- Bullet point`) without relying on complex formatting tools. To learn more about Markdown syntax, refer to [this guide](https://www.markdownguide.org/).
 
 Resume used for this demostrations is inspired by [RenderCV Engineering Resumes Theme](https://www.overleaf.com/latex/templates/rendercv-engineeringresumes-theme/shwqvsxdgkjy).
@@ -36,10 +36,10 @@ To create your resume in Markdown:
 2. Write your resume using Markdown syntax.
 3. Save it as `resume.md`.
 
-#### Setting Up a Static Site Generator
+### Setting Up a Static Site Generator
 A **static site generator (SSG)** automates the process of converting Markdown files into a fully formatted website. For this guide, we use **Pelican**, a Python-based static site generator.
 
-##### Installation Steps:
+#### Installation Steps:
 1. Install [Python](https://www.python.org/).
 2. Install Pelican with Markdown support:
    ```sh
@@ -65,13 +65,13 @@ A **static site generator (SSG)** automates the process of converting Markdown f
    date: 2025-03-05 12:00
    ```
 
-#### Publishing with a Forge
+### Publishing with a Forge
 A **forge** is an online platform that supports collaborative software development and version control. Forges are commonly used for, collaborative software development, bug and issue tracking, project documentation hosting, website hosting and etc. Popular forges include **GitHub, GitLab, Gitea, and Codeberg**. This guide uses **GitHub** for hosting.
 
-##### Understanding GitHub and Repositories
+#### Understanding GitHub and Repositories
 A **repository (repo)** in GitHub is a storage space where your project files and version history are managed. A repository can be public or private and allows developers to collaborate on code.
 
-##### Steps to Deploy on GitHub Pages:
+#### Steps to Deploy on GitHub Pages:
 1. Install `ghp-import`:
    ```sh
    python -m pip install ghp-import
@@ -101,13 +101,13 @@ A **repository (repo)** in GitHub is a storage space where your project files an
    - Use this token instead of a password when prompted.
 10. View your deployed resume at: https://username.github.io/example 
 ---
-### Principles of Technical Writing
+## Principles of Technical Writing
 *(To be completed...)*
 
 ---
-### FAQ
+## FAQ
 *(To be completed...)*
 
 ---
-### Credits
+## Credits
 *(To be completed...)*
