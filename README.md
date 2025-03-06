@@ -8,14 +8,17 @@
    - [Setting Up a Static Site Generator](#setting-up-a-static-site-generator)
    - [Publishing with a Forge](#publishing-with-a-forge)
 4. [Principles of Technical Writing](#principles-of-technical-writing)
+   - [Use of Lightweight Markup Language](#Use-of-Lightweight-Markup-Language)
+   - [Distributed Version Control System](#Distributed-Version-Control-System)
+   - [Static Site Generators for Documentation](#Static-Site-Generators-for-Documentation)
+   - [Hosting on a Forge](#Hosting-on-a-Forge)
 5. [FAQ](#faq)
 6. [Credits](#credits)
 
 ## Purpose
 This README provides a step-by-step guide on how to format, version control, and host a resume on a forge that supports static web hosting. It is designed for individuals who want to showcase their resume in an accessible and professional manner while following modern technical documentation best practices. By following this guide, users will learn how to use Markdown, Git, and a static site generator to create and maintain an online resume efficiently.
 
-
-# Prerequisites
+## Prerequisites
 Before proceeding, ensure you have the following:
 - **A computer with internet access**
 - **A text editor** (such as Notepad, VS Code, or any Markdown-supported editor)
@@ -58,12 +61,11 @@ A **static site generator (SSG)** automates the process of converting Markdown f
    https://username.github.io/example
    ```
 6. Add your resume Markdown file to `pelicanProject/content/pages/`.
-7. (Optional) Create an `about.md` file in `content/` for an About page. This will create a blogpost basically.
+7. (Optional) Create an `about.md` file in `content/` for an About page.
 8. Ensure your Markdown files contain metadata at the top:
    ```markdown
-   title: Resume (Will also be the section/tab title)
+   title: Resume
    date: 2025-03-05 12:00
-   category: About This(For blocgposts, what section this blogpost is from)
    ```
 
 ### Publishing with a Forge
@@ -85,30 +87,47 @@ A **repository (repo)** in GitHub is a storage space where your project files an
    git clone https://github.com/username/example.git
    ```
 6. Move the Pelican project into the repository folder.
-7. Commit the project:
+7. Add files to version control:
    ```sh
    git add .
-   git commit -am "First commit"
    ```
-8. Generate the site and deploy to GitHub Pages:
+8. Commit the changes:
+   ```sh
+   git commit -m "First commit"
+   ```
+9. Generate the site and deploy to GitHub Pages:
    ```sh
    pelican content -s publishconf.py
    ghp-import output -b gh-pages
    git push origin gh-pages
    ```
-9. GitHub will ask for login credentials; Git no longer supports passwords, so create a **personal access token**:
-   - Go to [GitHub Token Creation](https://github.com/settings/tokens).
-   - Generate a new token with **repo** and **public_repo** permissions.
+10. GitHub no longer supports passwords for authentication. Instead, create a **personal access token**:
+   - Visit [GitHub Token Creation](https://github.com/settings/tokens).
+   - Generate a token with **repo** and **public_repo** permissions.
    - Use this token instead of a password when prompted.
-10. View your deployed resume at: https://username.github.io/example 
+   - For more info follow [this discussion](https://github.com/orgs/community/discussions/29193) for detailed steps.
+11. View your deployed resume at: https://username.github.io/example 
 
 ## Principles of Technical Writing
-*(To be completed...)*
+Effective technical writing follows structured principles to ensure clarity, usability, and efficiency. This README applies key recommendations from Andrew Etter’s *Modern Technical Writing* and aligns with established best practices from Pfeiffer’s *Technical Communication*.
+
+### Use of Lightweight Markup Language
+Etter emphasizes the importance of using **lightweight markup languages** for documentation. Markdown is chosen here because it is simple, widely used, and integrates well with static site generators. Markdown allows for clear formatting without complex syntax, making documentation easy to read and maintain.
+
+### Distributed Version Control System
+Etter advocates for using **distributed version control systems** like Git to manage documentation. This README follows that principle by instructing users to host their resume using GitHub, ensuring version control, collaboration, and easy tracking of changes.
+
+### Static Site Generators for Documentation
+Modern technical documentation should be **static and easily deployable**, as Etter suggests. Pelican is used here to convert Markdown into a structured website, ensuring efficient content delivery without relying on dynamic databases or heavy backend systems.
+
+### Hosting on a Forge
+A **forge** like GitHub provides accessibility, collaboration tools, and version tracking. Etter highlights that documentation should be stored in a **centralized, accessible location**, which GitHub achieves through GitHub Pages. This enables resumes to be easily updated and shared.
+
+By following these principles, this README ensures structured, professional, and maintainable technical documentation that aligns with modern best practices.
 
 
 ## FAQ
 *(To be completed...)*
-
 
 ## Credits
 *(To be completed...)*
