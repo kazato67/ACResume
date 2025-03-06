@@ -79,7 +79,7 @@ A **repository (repo)** in GitHub is a storage space where your project files an
    ```sh
    python -m pip install ghp-import
    ```
-2. Install [Git](https://git-scm.com/).
+2. Install Git, follow this [Installation Guide](https://github.com/git-guides/install-git) for installing GIT.
 3. Create an account on [GitHub](https://github.com/).
 4. Create a new repository (e.g., `example`).
 5. Clone the repository:
@@ -109,13 +109,13 @@ A **repository (repo)** in GitHub is a storage space where your project files an
 11. View your deployed resume at: https://username.github.io/example 
 
 ## Principles of Technical Writing
-Effective technical writing follows structured principles to ensure clarity, usability, and efficiency. This README applies key recommendations from Andrew Etter’s *Modern Technical Writing* and aligns with established best practices from Pfeiffer’s *Technical Communication*.
+Effective technical writing follows structured principles to ensure clarity, usability, and efficiency. We apply key recommendations from Andrew Etter’s *Modern Technical Writing* and this aligns with established best practices from Pfeiffer’s *Technical Communication*.
 
 ### Use of Lightweight Markup Language
 Etter emphasizes the importance of using **lightweight markup languages** for documentation. Markdown is chosen here because it is simple, widely used, and integrates well with static site generators. Markdown allows for clear formatting without complex syntax, making documentation easy to read and maintain.
 
 ### Distributed Version Control System
-Etter advocates for using **distributed version control systems** like Git to manage documentation. This README follows that principle by instructing users to host their resume using GitHub, ensuring version control, collaboration, and easy tracking of changes.
+Etter advocates for using **distributed version control systems** like Git to manage documentation. We follow that principle by instructing users to host their resume using GitHub, ensuring version control, collaboration, and easy tracking of changes.
 
 ### Static Site Generators for Documentation
 Modern technical documentation should be **static and easily deployable**, as Etter suggests. Pelican is used here to convert Markdown into a structured website, ensuring efficient content delivery without relying on dynamic databases or heavy backend systems.
@@ -123,7 +123,7 @@ Modern technical documentation should be **static and easily deployable**, as Et
 ### Hosting on a Forge
 A **forge** like GitHub provides accessibility, collaboration tools, and version tracking. Etter highlights that documentation should be stored in a **centralized, accessible location**, which GitHub achieves through GitHub Pages. This enables resumes to be easily updated and shared.
 
-By following these principles, this README ensures structured, professional, and maintainable technical documentation that aligns with modern best practices.
+By following these principles, we ensure a structured, professional, and maintainable technical documentation that aligns with modern best practices.
 
 
 ## FAQ
