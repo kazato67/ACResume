@@ -58,11 +58,12 @@ A **static site generator (SSG)** automates the process of converting Markdown f
    https://username.github.io/example
    ```
 6. Add your resume Markdown file to `pelicanProject/content/pages/`.
-7. (Optional) Create an `about.md` file in `content/` for an About page.
+7. (Optional) Create an `about.md` file in `content/` for an About page. This will create a blogpost basically.
 8. Ensure your Markdown files contain metadata at the top:
    ```markdown
-   title: Resume
+   title: Resume (Will also be the section/tab title)
    date: 2025-03-05 12:00
+   category: About This(For blocgposts, what section this blogpost is from)
    ```
 
 ### Publishing with a Forge
