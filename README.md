@@ -33,7 +33,7 @@ Before proceeding, ensure you have the following:
 ### Understanding Markdown
 Your resume is formatted using **Markdown**, a lightweight markup language used to structure and format text. Unlike programming languages that are used to write code, markup languages like Markdown define the structure of documents. Markdown allows you to format text using simple symbols (e.g., `**bold**`, `# Heading`, `- Bullet point`) without relying on complex formatting tools. To learn more about Markdown syntax, refer to [this guide](https://www.markdownguide.org/basic-syntax/).
 
-Resume used for this demostrations is inspired by [RenderCV Engineering Resumes Theme](https://www.overleaf.com/latex/templates/rendercv-engineeringresumes-theme/shwqvsxdgkjy).
+Resume used for this demonstration is inspired by [RenderCV Engineering Resumes Theme](https://www.overleaf.com/latex/templates/rendercv-engineeringresumes-theme/shwqvsxdgkjy).
 
 To create your resume in Markdown:
 1. Open a text editor.
@@ -45,26 +45,32 @@ A **static site generator (SSG)** automates the process of converting Markdown f
 
 #### Installation Steps:
 1. Install [Python](https://www.python.org/).
-2. Install Pelican with Markdown support:
+2. Open terminal
+3. Install Pelican with Markdown support:
    ```sh
    python -m pip install "pelican[markdown]"
    ```
-3. (Optional) Install `make` to simplify commands:
+3. (Optional for Advanced Users) Install `make` to simplify commands:
    - [Windows Installation Guide](https://stackoverflow.com/q/32127524)
    - [macOS Installation Guide](https://stackoverflow.com/q/1469994)
-4. Run the quickstart command:
+4. Use the cd command to move to the desired directory where you want to make the pelican project. To learn more about common terminal commands go to [Common Terminal Commands](https://gist.github.com/bradtraversy/cc180de0edee05075a6139e42d5f28ce).
+5. Run the quickstart command:
    ```sh
    pelican-quickstart
    ```
    This will prompt customization options; select what best fits your needs.
-5. **Most important customization option:** Choose **yes** for a specific URL prefix, when prompted. Use the format:
+6. Common optimization prompts:
+   - For the first prompt type nothing or a period character.
+   - When asking for the default language type en for english.
+   - When asking for timezone type America/Winnipeg
+7. **Most important customization option:** Choose **yes** for a specific URL prefix, when prompted. Use the format:
    ```
    https://username.github.io/example
    ```
-6. Add your resume Markdown file to `pelicanProject/content/pages/`.
-7. (Optional) Create an `about.md` file in `content/` for an About page.
-8. Ensure your Markdown files contain metadata at the top:
-   ```markdown
+8. Add your resume Markdown file to `pelicanProject/content/pages/`.
+9. (Optional) Create an `about.md` file in `content/` for an About page.
+10. Ensure your Markdown files contain metadata at the top:
+   ```
    title: Resume
    date: 2025-03-05 12:00
    ```
@@ -87,22 +93,23 @@ A **repository (repo)** in GitHub is a storage space where your project files an
    ```sh
    git clone https://github.com/username/example.git
    ```
-6. Move the Pelican project into the repository folder.
-7. Add files to version control:
+6. Move the Pelican project into the repository folder. Usually, located under Documents/GitHub
+7. Open terminal, change directory to the repository folder.
+8. Add files to version control. Run the command:
    ```sh
    git add .
    ```
-8. Commit the changes:
+9. Commit the changes. Run the command:
    ```sh
    git commit -m "First commit"
    ```
-9. Generate the site and deploy to GitHub Pages:
+10. Generate the site and deploy to GitHub Pages. Run the commands:
    ```sh
    pelican content -s publishconf.py
    ghp-import output -b gh-pages
    git push origin gh-pages
    ```
-10. GitHub no longer supports passwords for authentication. Instead, create a **personal access token**:
+11. Last command will prompt for your GitHub username and password but GitHub no longer supports passwords for authentication. Instead, create a **personal access token**:
    - Visit [GitHub Token Creation](https://github.com/settings/tokens).
    - Generate a token with **repo** and **public_repo** permissions.
    - Use this token instead of a password when prompted.
@@ -147,6 +154,7 @@ Below is a list of all external links referenced in this README:
 - [Python Download](https://www.python.org/)
 - [Windows make Installation Guide](https://stackoverflow.com/q/32127524)
 - [macOS make Installation Guide](https://stackoverflow.com/q/1469994)
+- [Common Terminal Commands](https://gist.github.com/bradtraversy/cc180de0edee05075a6139e42d5f28ce)
 - [Git Download & Installation Guide](https://github.com/git-guides/install-git)
 - [Creating a new repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository)
 - [GitHub Token Creation](https://github.com/settings/tokens)
